@@ -1,8 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { Box, Button, Image, Heading } from "native-base";
 import { Animated, Easing, StyleSheet } from "react-native";
-
-const HomeScreen = () => {
+const HomeScreen = ({ navigation }) => {
   const colorAnimation = useRef(new Animated.Value(0)).current;
 
   useEffect(() => {
@@ -60,6 +59,7 @@ const HomeScreen = () => {
               fontWeight: "extrabold",
               fontSize: "3xl",
             }}
+            onPress={() => navigation.navigate("Game")}
           >
             Start
           </Button>
