@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import { Box, Button, Image, Heading } from "native-base";
-import { Animated, Easing } from "react-native";
+import { Animated, Easing, StyleSheet } from "react-native";
 
 const HomeScreen = () => {
   const colorAnimation = useRef(new Animated.Value(0)).current;
@@ -23,43 +23,56 @@ const HomeScreen = () => {
 
   return (
     <Animated.View style={{ flex: 1, backgroundColor }}>
-      <Box flex={1} justifyContent={"center"} alignItems={"center"}>
-        <Heading
-          size={"4xl"}
-          marginBottom={20}
-          color={"white"}
-          fontWeight={"hairline"}
-        >
-          Flag Quiz
-        </Heading>
-        <Image
-          marginBottom={50}
-          source={require("../../assets/world.png")}
-          alt="World"
-          size={300}
-          borderRadius={150}
-          style={{
-            backgroundColor: "transparent",
-            resizeMode: "contain",
-          }}
-        />
-        <Button
-          marginTop={20}
-          variant="subtle"
-          size={"lg"}
-          colorScheme={"pink"}
-          width={200}
-          rounded={30}
-          _text={{
-            fontWeight: "extrabold",
-            fontSize: "3xl",
-          }}
-        >
-          Start
-        </Button>
+      <Box flex={1}>
+        <Box style={styles.box}>
+          <Heading
+            size={"4xl"}
+            marginTop={20}
+            color={"white"}
+            fontWeight={"hairline"}
+            alignSelf={"center"}
+          >
+            Flag Quiz
+          </Heading>
+        </Box>
+        <Box style={styles.box}>
+          <Image
+            source={require("../../assets/world.png")}
+            alt="World"
+            size={300}
+            borderRadius={150}
+            alignSelf={"center"}
+            style={{
+              resizeMode: "contain",
+            }}
+          />
+        </Box>
+        <Box style={styles.box}>
+          <Button
+            alignSelf={"center"}
+            variant="outline"
+            size={"lg"}
+            colorScheme={"pink"}
+            width={200}
+            rounded={30}
+            _text={{
+              color: "white",
+              fontWeight: "extrabold",
+              fontSize: "3xl",
+            }}
+          >
+            Start
+          </Button>
+        </Box>
       </Box>
     </Animated.View>
   );
 };
-
 export default HomeScreen;
+
+const styles = StyleSheet.create({
+  box: {
+    flex: 1,
+    justifyContent: "center",
+  },
+});
