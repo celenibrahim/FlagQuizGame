@@ -1,33 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { StyleSheet } from "react-native";
+import { Dimensions, StyleSheet } from "react-native";
 import { Box, Text, Button, VStack, Center } from "native-base";
-
-const flags = [
-  {
-    country: "France",
-    flag: "🇫🇷",
-    options: ["France", "Italy", "Spain", "Germany"],
-    correct: "France",
-  },
-  {
-    country: "Japan",
-    flag: "🇯🇵",
-    options: ["China", "Japan", "South Korea", "Thailand"],
-    correct: "Japan",
-  },
-  {
-    country: "Brazil",
-    flag: "🇧🇷",
-    options: ["Argentina", "Brazil", "Colombia", "Peru"],
-    correct: "Brazil",
-  },
-  {
-    country: "USA",
-    flag: "🇺🇸",
-    options: ["UK", "Canada", "USA", "Australia"],
-    correct: "USA",
-  },
-];
+import flagData from "./../flags_data.json";
 
 const GameScreen = ({ navigation }) => {
   const [timer, setTimer] = useState(10);
@@ -35,7 +9,11 @@ const GameScreen = ({ navigation }) => {
   const [selectedAnswer, setSelectedAnswer] = useState(null);
 
   useEffect(() => {
-    // Timer geriye doğru sayımı
+    const randomFlag = Math.floor(Math.random() * flagData.length);
+    setCurrentFlag(randomFlag);
+  }, []);
+
+  useEffect(() => {
     if (timer > 0) {
       const interval = setInterval(() => {
         setTimer((prev) => prev - 1);
@@ -43,7 +21,6 @@ const GameScreen = ({ navigation }) => {
 
       return () => clearInterval(interval);
     } else {
-      // Süre dolarsa sonraki soruya geçiş
       handleNextQuestion();
     }
   }, [timer]);
@@ -51,16 +28,16 @@ const GameScreen = ({ navigation }) => {
   const handleAnswer = (option) => {
     setSelectedAnswer(option);
 
-    // Cevap kontrolü ve zamanlayıcı sıfırlama
     setTimeout(() => {
       handleNextQuestion();
-    }, 500);
+    }, 350);
   };
 
   const handleNextQuestion = () => {
     setTimer(10);
     setSelectedAnswer(null);
-    setCurrentFlag((prev) => (prev + 1) % flags.length);
+    const randomFlag = Math.floor(Math.random() * flagData.length);
+    setCurrentFlag(randomFlag);
   };
 
   const handleFinish = () => {
@@ -70,25 +47,30 @@ const GameScreen = ({ navigation }) => {
   return (
     <Center flex={1} p={4}>
       <Box mb={4}>
-        <Text fontSize="2xl">{`Time left: ${timer}s`}</Text>
+        <Text bold italic fontSize="4xl">{`Time left: ${timer}s`}</Text>
       </Box>
 
       <Box mb={4}>
-        <Text fontSize="6xl">{flags[currentFlag].flag}</Text>
+        <Text fontSize="8xl">{flagData[currentFlag].flag}</Text>
       </Box>
 
       <VStack space={3} w="100%">
-        {flags[currentFlag].options.map((option, index) => (
+        {flagData[currentFlag].options.map((option, index) => (
           <Button
+            style={styles.button_ans}
             key={index}
             colorScheme={
               selectedAnswer === option
-                ? option === flags[currentFlag].correct
+                ? option === flagData[currentFlag].correct
                   ? "green"
                   : "red"
                 : "blue"
             }
             onPress={() => handleAnswer(option)}
+            _text={{
+              fontSize: "22px",
+              fontWeight: "bold",
+            }}
           >
             {option}
           </Button>
@@ -96,7 +78,7 @@ const GameScreen = ({ navigation }) => {
       </VStack>
 
       <Button mt={10} colorScheme="teal" onPress={handleFinish}>
-        Finish
+        Pass
       </Button>
     </Center>
   );
@@ -104,4 +86,9 @@ const GameScreen = ({ navigation }) => {
 
 export default GameScreen;
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  button_ans: {
+    height: Dimensions.get("screen").height / 12,
+    borderRadius: 20,
+  },
+});

@@ -1,9 +1,18 @@
-import React, { useEffect, useRef } from "react";
-import { Box, Button, Image, Heading } from "native-base";
+import React, { useEffect, useRef, useState } from "react";
+import {
+  Box,
+  Button,
+  Image,
+  Heading,
+  Modal,
+  FormControl,
+  Input,
+  VStack,
+} from "native-base";
 import { Animated, Easing, StyleSheet } from "react-native";
 const HomeScreen = ({ navigation }) => {
   const colorAnimation = useRef(new Animated.Value(0)).current;
-
+  const [showModal, setShowModal] = useState(false);
   useEffect(() => {
     Animated.loop(
       Animated.timing(colorAnimation, {
@@ -47,6 +56,20 @@ const HomeScreen = ({ navigation }) => {
           />
         </Box>
         <Box style={styles.box}>
+          <Modal isOpen={showModal} onClose={() => setShowModal(false)}>
+            <Modal.Content maxWidth="400px">
+              <Modal.Body>
+                <Modal.Header style={styles.modal_header}>
+                  Select Mode
+                </Modal.Header>
+                <VStack>
+                  <Button />
+                  <Button />
+                  <Button />
+                </VStack>
+              </Modal.Body>
+            </Modal.Content>
+          </Modal>
           <Button
             alignSelf={"center"}
             variant="outline"
@@ -59,7 +82,7 @@ const HomeScreen = ({ navigation }) => {
               fontWeight: "extrabold",
               fontSize: "3xl",
             }}
-            onPress={() => navigation.navigate("Game")}
+            onPress={() => setShowModal(true)}
           >
             Start
           </Button>
@@ -74,5 +97,8 @@ const styles = StyleSheet.create({
   box: {
     flex: 1,
     justifyContent: "center",
+  },
+  modal_header: {
+    alignItems: "center",
   },
 });

@@ -1,0 +1,866 @@
+[
+  {
+    "country": "Brazil",
+    "flag": "🇧🇷",
+    "options": ["Venezuela", "Brazil", "Argentina", "Colombia"],
+    "correct": "Brazil"
+  },
+  {
+    "country": "Nigeria",
+    "flag": "🇳🇬",
+    "options": ["South Africa", "Kenya", "Niger", "Nigeria"],
+    "correct": "Nigeria"
+  },
+  {
+    "country": "Turkey",
+    "flag": "🇹🇷",
+    "options": ["Algeria", "Morocco", "Turkey", "Tunisia"],
+    "correct": "Turkey"
+  },
+  {
+    "country": "Mexico",
+    "flag": "🇲🇽",
+    "options": ["Hungary", "Iran", "Mexico", "Italy"],
+    "correct": "Mexico"
+  },
+  {
+    "country": "Ghana",
+    "flag": "🇬🇭",
+    "options": ["Senegal", "Ghana", "Algeria", "Ethiopia"],
+    "correct": "Ghana"
+  },
+  {
+    "country": "Jamaica",
+    "flag": "🇯🇲",
+    "options": ["South Africa", "Gabon", "Jamaica", "Kenya"],
+    "correct": "Jamaica"
+  },
+  {
+    "country": "Russia",
+    "flag": "🇷🇺",
+    "options": ["Netherlands", "Serbia", "Croatia", "Russia"],
+    "correct": "Russia"
+  },
+  {
+    "country": "India",
+    "flag": "🇮🇳",
+    "options": ["Ivory Coast", "Ireland", "Niger", "India"],
+    "correct": "India"
+  },
+  {
+    "country": "Pakistan",
+    "flag": "🇵🇰",
+    "options": ["Saudi Arabia", "Bangladesh", "Pakistan", "Afghanistan"],
+    "correct": "Pakistan"
+  },
+  {
+    "country": "Bangladesh",
+    "flag": "🇧🇩",
+    "options": ["Pakistan", "Bangladesh", "Nepal", "Japan"],
+    "correct": "Bangladesh"
+  },
+  {
+    "country": "South Korea",
+    "flag": "🇰🇷",
+    "options": ["China", "Japan", "South Korea", "Taiwan"],
+    "correct": "South Korea"
+  },
+  {
+    "country": "Japan",
+    "flag": "🇯🇵",
+    "options": ["Taiwan", "South Korea", "Japan", "Indonesia"],
+    "correct": "Japan"
+  },
+  {
+    "country": "Peru",
+    "flag": "🇵🇪",
+    "options": ["Poland", "Austria", "Peru", "Canada"],
+    "correct": "Peru"
+  },
+  {
+    "country": "Saudi Arabia",
+    "flag": "🇸🇦",
+    "options": ["Iran", "Saudi Arabia", "Pakistan", "Afghanistan"],
+    "correct": "Saudi Arabia"
+  },
+  {
+    "country": "Morocco",
+    "flag": "🇲🇦",
+    "options": ["Tunisia", "Algeria", "Morocco", "Turkey"],
+    "correct": "Morocco"
+  },
+  {
+    "country": "Kenya",
+    "flag": "🇰🇪",
+    "options": ["Tanzania", "Rwanda", "Kenya", "Uganda"],
+    "correct": "Kenya"
+  },
+  {
+    "country": "South Africa",
+    "flag": "🇿🇦",
+    "options": ["Namibia", "South Africa", "Botswana", "Kenya"],
+    "correct": "South Africa"
+  },
+  {
+    "country": "Philippines",
+    "flag": "🇵🇭",
+    "options": ["Thailand", "Malaysia", "Philippines", "Indonesia"],
+    "correct": "Philippines"
+  },
+  {
+    "country": "Australia",
+    "flag": "🇦🇺",
+    "options": ["Australia", "Fiji", "UK", "New Zealand"],
+    "correct": "Australia"
+  },
+  {
+    "country": "New Zealand",
+    "flag": "🇳🇿",
+    "options": ["Fiji", "New Zealand", "UK", "Australia"],
+    "correct": "New Zealand"
+  },
+  {
+    "country": "Fiji",
+    "flag": "🇫🇯",
+    "options": ["Papua New Guinea", "Fiji", "New Zealand", "Australia"],
+    "correct": "Fiji"
+  },
+  {
+    "country": "Venezuela",
+    "flag": "🇻🇪",
+    "options": ["Ecuador", "Peru", "Colombia", "Venezuela"],
+    "correct": "Venezuela"
+  },
+  {
+    "country": "Colombia",
+    "flag": "🇨🇴",
+    "options": ["Peru", "Ecuador", "Venezuela", "Colombia"],
+    "correct": "Colombia"
+  },
+  {
+    "country": "Ecuador",
+    "flag": "🇪🇨",
+    "options": ["Peru", "Ecuador", "Colombia", "Venezuela"],
+    "correct": "Ecuador"
+  },
+  {
+    "country": "Italy",
+    "flag": "🇮🇹",
+    "options": ["Ireland", "Bulgaria", "Mexico", "Italy"],
+    "correct": "Italy"
+  },
+  {
+    "country": "Ireland",
+    "flag": "🇮🇪",
+    "options": ["Ivory Coast", "Ireland", "Mexico", "Italy"],
+    "correct": "Ireland"
+  },
+  {
+    "country": "Ivory Coast",
+    "flag": "🇨🇮",
+    "options": ["Ireland", "India", "Niger", "Ivory Coast"],
+    "correct": "Ivory Coast"
+  },
+  {
+    "country": "Switzerland",
+    "flag": "🇨🇭",
+    "options": ["Denmark", "Finland", "Norway", "Switzerland"],
+    "correct": "Switzerland"
+  },
+  {
+    "country": "Sweden",
+    "flag": "🇸🇪",
+    "options": ["Iceland", "Norway", "Sweden", "Finland"],
+    "correct": "Sweden"
+  },
+  {
+    "country": "Denmark",
+    "flag": "🇩🇰",
+    "options": ["Denmark", "Switzerland", "Austria", "Norway"],
+    "correct": "Denmark"
+  },
+  {
+    "country": "Norway",
+    "flag": "🇳🇴",
+    "options": ["Iceland", "Finland", "Norway", "Denmark"],
+    "correct": "Norway"
+  },
+  {
+    "country": "Austria",
+    "flag": "🇦🇹",
+    "options": ["Poland", "Germany", "Austria", "Latvia"],
+    "correct": "Austria"
+  },
+  {
+    "country": "Poland",
+    "flag": "🇵🇱",
+    "options": ["Indonesia", "Austria", "Poland", "Monaco"],
+    "correct": "Poland"
+  },
+  {
+    "country": "Czech Republic",
+    "flag": "🇨🇿",
+    "options": ["Czech Republic", "Slovakia", "Serbia", "Russia"],
+    "correct": "Czech Republic"
+  },
+  {
+    "country": "Slovakia",
+    "flag": "🇸🇰",
+    "options": ["Czech Republic", "Slovakia", "Russia", "Slovenia"],
+    "correct": "Slovakia"
+  },
+  {
+    "country": "Slovenia",
+    "flag": "🇸🇮",
+    "options": ["Slovenia", "Serbia", "Russia", "Croatia"],
+    "correct": "Slovenia"
+  },
+  {
+    "country": "Serbia",
+    "flag": "🇷🇸",
+    "options": ["Serbia", "Russia", "Croatia", "Slovenia"],
+    "correct": "Serbia"
+  },
+  {
+    "country": "Croatia",
+    "flag": "🇭🇷",
+    "options": ["Italy", "Hungary", "Croatia", "Serbia"],
+    "correct": "Croatia"
+  },
+  {
+    "country": "Hungary",
+    "flag": "🇭🇺",
+    "options": ["Bulgaria", "Italy", "Hungary", "Mexico"],
+    "correct": "Hungary"
+  },
+  {
+    "country": "Bulgaria",
+    "flag": "🇧🇬",
+    "options": ["Mexico", "Hungary", "Bulgaria", "Italy"],
+    "correct": "Bulgaria"
+  },
+  {
+    "country": "Latvia",
+    "flag": "🇱🇻",
+    "options": ["Lithuania", "Poland", "Estonia", "Latvia"],
+    "correct": "Latvia"
+  },
+  {
+    "country": "Lithuania",
+    "flag": "🇱🇹",
+    "options": ["Estonia", "Latvia", "Lithuania", "Poland"],
+    "correct": "Lithuania"
+  },
+  {
+    "country": "Estonia",
+    "flag": "🇪🇪",
+    "options": ["Latvia", "Estonia", "Lithuania", "Finland"],
+    "correct": "Estonia"
+  },
+  {
+    "country": "Finland",
+    "flag": "🇫🇮",
+    "options": ["Norway", "Sweden", "Finland", "Denmark"],
+    "correct": "Finland"
+  },
+  {
+    "country": "Iceland",
+    "flag": "🇮🇸",
+    "options": ["Iceland", "Finland", "Norway", "Denmark"],
+    "correct": "Iceland"
+  },
+  {
+    "country": "Armenia",
+    "flag": "🇦🇲",
+    "options": ["Georgia", "Azerbaijan", "Turkey", "Armenia"],
+    "correct": "Armenia"
+  },
+  {
+    "country": "Azerbaijan",
+    "flag": "🇦🇿",
+    "options": ["Turkey", "Georgia", "Azerbaijan", "Armenia"],
+    "correct": "Azerbaijan"
+  },
+  {
+    "country": "Moldova",
+    "flag": "🇲🇹",
+    "options": ["Romania", "Ukraine", "Moldova", "Russia"],
+    "correct": "Moldova"
+  },
+  {
+    "country": "Ukraine",
+    "flag": "🇺🇦",
+    "options": ["Romania", "Belarus", "Poland", "Ukraine"],
+    "correct": "Ukraine"
+  },
+  {
+    "country": "Belarus",
+    "flag": "🇧🇾",
+    "options": ["Lithuania", "Belarus", "Poland", "Latvia"],
+    "correct": "Belarus"
+  },
+  {
+    "country": "Kazakhstan",
+    "flag": "🇰🇿",
+    "options": ["Kyrgyzstan", "Uzbekistan", "Kazakhstan", "Tajikistan"],
+    "correct": "Kazakhstan"
+  },
+  {
+    "country": "Uzbekistan",
+    "flag": "🇺🇿",
+    "options": ["Tajikistan", "Uzbekistan", "Kazakhstan", "Kyrgyzstan"],
+    "correct": "Uzbekistan"
+  },
+  {
+    "country": "Kyrgyzstan",
+    "flag": "🇰🇬",
+    "options": ["Kazakhstan", "Tajikistan", "Kyrgyzstan", "Uzbekistan"],
+    "correct": "Kyrgyzstan"
+  },
+  {
+    "country": "Tajikistan",
+    "flag": "🇹🇯",
+    "options": ["Uzbekistan", "Kyrgyzstan", "Kazakhstan", "Tajikistan"],
+    "correct": "Tajikistan"
+  },
+  {
+    "country": "Vietnam",
+    "flag": "🇻🇳",
+    "options": ["Laos", "Cambodia", "Thailand", "Vietnam"],
+    "correct": "Vietnam"
+  },
+  {
+    "country": "Laos",
+    "flag": "🇱🇦",
+    "options": ["Thailand", "Vietnam", "Laos", "Cambodia"],
+    "correct": "Laos"
+  },
+  {
+    "country": "Cambodia",
+    "flag": "🇰🇭",
+    "options": ["Laos", "Thailand", "Cambodia", "Vietnam"],
+    "correct": "Cambodia"
+  },
+  {
+    "country": "Thailand",
+    "flag": "🇹🇭",
+    "options": ["Vietnam", "Laos", "Thailand", "Cambodia"],
+    "correct": "Thailand"
+  },
+  {
+    "country": "Singapore",
+    "flag": "🇸🇬",
+    "options": ["Malaysia", "Singapore", "Indonesia", "Philippines"],
+    "correct": "Singapore"
+  },
+  {
+    "country": "Malaysia",
+    "flag": "🇲🇾",
+    "options": ["Indonesia", "Malaysia", "Philippines", "Brunei"],
+    "correct": "Malaysia"
+  },
+  {
+    "country": "Indonesia",
+    "flag": "🇮🇩",
+    "options": ["Philippines", "Indonesia", "Brunei", "Malaysia"],
+    "correct": "Indonesia"
+  },
+  {
+    "country": "Brunei",
+    "flag": "🇧🇳",
+    "options": ["Malaysia", "Brunei", "Indonesia", "Philippines"],
+    "correct": "Brunei"
+  },
+  {
+    "country": "Qatar",
+    "flag": "🇶🇦",
+    "options": ["UAE", "Kuwait", "Saudi Arabia", "Qatar"],
+    "correct": "Qatar"
+  },
+  {
+    "country": "UAE",
+    "flag": "🇦🇪",
+    "options": ["UAE", "Saudi Arabia", "Kuwait", "Qatar"],
+    "correct": "UAE"
+  },
+  {
+    "country": "Kuwait",
+    "flag": "🇰🇼",
+    "options": ["Kuwait", "Qatar", "Saudi Arabia", "Bahrain"],
+    "correct": "Kuwait"
+  },
+  {
+    "country": "Bahrain",
+    "flag": "🇧🇭",
+    "options": ["Qatar", "Bahrain", "UAE", "Kuwait"],
+    "correct": "Bahrain"
+  },
+  {
+    "country": "Oman",
+    "flag": "🇴🇲",
+    "options": ["Yemen", "Oman", "Bahrain", "Qatar"],
+    "correct": "Oman"
+  },
+  {
+    "country": "Yemen",
+    "flag": "🇾🇪",
+    "options": ["Oman", "Bahrain", "Kuwait", "Yemen"],
+    "correct": "Yemen"
+  },
+  {
+    "country": "Jordan",
+    "flag": "🇯🇴",
+    "options": ["Lebanon", "Jordan", "Syria", "Iraq"],
+    "correct": "Jordan"
+  },
+  {
+    "country": "Lebanon",
+    "flag": "🇱🇧",
+    "options": ["Jordan", "Syria", "Lebanon", "Palestine"],
+    "correct": "Lebanon"
+  },
+  {
+    "country": "Syria",
+    "flag": "🇸🇾",
+    "options": ["Iraq", "Jordan", "Syria", "Lebanon"],
+    "correct": "Syria"
+  },
+  {
+    "country": "Iraq",
+    "flag": "🇮🇶",
+    "options": ["Jordan", "Syria", "Lebanon", "Iraq"],
+    "correct": "Iraq"
+  },
+  {
+    "country": "Palestine",
+    "flag": "🇵🇸",
+    "options": ["Lebanon", "Jordan", "Syria", "Palestine"],
+    "correct": "Palestine"
+  },
+  {
+    "country": "Italy",
+    "flag": "🇮🇹",
+    "options": ["Italy", "Greece", "Spain", "Portugal"],
+    "correct": "Italy"
+  },
+  {
+    "country": "Spain",
+    "flag": "🇪🇸",
+    "options": ["Italy", "Spain", "Portugal", "France"],
+    "correct": "Spain"
+  },
+  {
+    "country": "France",
+    "flag": "🇫🇷",
+    "options": ["Belgium", "France", "Germany", "Netherlands"],
+    "correct": "France"
+  },
+  {
+    "country": "Germany",
+    "flag": "🇩🇪",
+    "options": ["Liechtenstein", "Germany", "Austria", "Switzerland"],
+    "correct": "Germany"
+  },
+  {
+    "country": "Netherlands",
+    "flag": "🇳🇱",
+    "options": ["Germany", "Netherlands", "Belgium", "France"],
+    "correct": "Netherlands"
+  },
+  {
+    "country": "Belgium",
+    "flag": "🇧🇪",
+    "options": ["France", "Germany", "Belgium", "Netherlands"],
+    "correct": "Belgium"
+  },
+  {
+    "country": "Finland",
+    "flag": "🇫🇮",
+    "options": ["Norway", "Iceland", "Finland", "Denmark"],
+    "correct": "Finland"
+  },
+  {
+    "country": "Sweden",
+    "flag": "🇸🇪",
+    "options": ["Sweden", "Denmark", "Norway", "Finland"],
+    "correct": "Sweden"
+  },
+  {
+    "country": "Denmark",
+    "flag": "🇩🇰",
+    "options": ["Denmark", "Finland", "Norway", "Iceland"],
+    "correct": "Denmark"
+  },
+  {
+    "country": "Norway",
+    "flag": "🇳🇴",
+    "options": ["Norway", "Denmark", "Finland", "Iceland"],
+    "correct": "Norway"
+  },
+  {
+    "country": "Portugal",
+    "flag": "🇵🇹",
+    "options": ["Portugal", "Spain", "Italy", "France"],
+    "correct": "Portugal"
+  },
+  {
+    "country": "Greece",
+    "flag": "🇬🇷",
+    "options": ["Greece", "Spain", "Italy", "Portugal"],
+    "correct": "Greece"
+  },
+  {
+    "country": "Austria",
+    "flag": "🇦🇹",
+    "options": ["Switzerland", "Austria", "Germany", "Belgium"],
+    "correct": "Austria"
+  },
+  {
+    "country": "Switzerland",
+    "flag": "🇨🇭",
+    "options": ["Italy", "Austria", "Germany", "Switzerland"],
+    "correct": "Switzerland"
+  },
+  {
+    "country": "Iceland",
+    "flag": "🇮🇸",
+    "options": ["Iceland", "Norway", "Denmark", "Finland"],
+    "correct": "Iceland"
+  },
+  {
+    "country": "United Kingdom",
+    "flag": "🇬🇧",
+    "options": ["United Kingdom", "Ireland", "Scotland", "Wales"],
+    "correct": "United Kingdom"
+  },
+  {
+    "country": "Ireland",
+    "flag": "🇮🇪",
+    "options": ["Ireland", "Scotland", "Wales", "United Kingdom"],
+    "correct": "Ireland"
+  },
+  {
+    "country": "Monaco",
+    "flag": "🇲🇨",
+    "options": ["Monaco", "Luxembourg", "Andorra", "Liechtenstein"],
+    "correct": "Monaco"
+  },
+  {
+    "country": "San Marino",
+    "flag": "🇸🇲",
+    "options": ["Monaco", "San Marino", "Vatican", "Liechtenstein"],
+    "correct": "San Marino"
+  },
+  {
+    "country": "Vatican City",
+    "flag": "🇻🇦",
+    "options": ["San Marino", "Vatican City", "Liechtenstein", "Monaco"],
+    "correct": "Vatican City"
+  },
+  {
+    "country": "Andorra",
+    "flag": "🇦🇩",
+    "options": ["Andorra", "San Marino", "Monaco", "Liechtenstein"],
+    "correct": "Andorra"
+  },
+  {
+    "country": "Malta",
+    "flag": "🇲🇹",
+    "options": ["Malta", "Monaco", "Vatican", "San Marino"],
+    "correct": "Malta"
+  },
+  {
+    "country": "Cyprus",
+    "flag": "🇨🇾",
+    "options": ["Turkey", "Greece", "Cyprus", "Syria"],
+    "correct": "Cyprus"
+  },
+  {
+    "country": "Kosovo",
+    "flag": "🇽🇰",
+    "options": ["Kosovo", "Montenegro", "Serbia", "Bosnia"],
+    "correct": "Kosovo"
+  },
+  {
+    "country": "Montenegro",
+    "flag": "🇲🇪",
+    "options": ["Montenegro", "Bosnia", "Serbia", "Croatia"],
+    "correct": "Montenegro"
+  },
+  {
+    "country": "Bosnia and Herzegovina",
+    "flag": "🇧🇦",
+    "options": ["Bosnia and Herzegovina", "Serbia", "Montenegro", "Croatia"],
+    "correct": "Bosnia and Herzegovina"
+  },
+  {
+    "country": "Serbia",
+    "flag": "🇷🇸",
+    "options": ["Kosovo", "Serbia", "Montenegro", "Bosnia"],
+    "correct": "Serbia"
+  },
+  {
+    "country": "Albania",
+    "flag": "🇦🇱",
+    "options": ["Albania", "Montenegro", "Kosovo", "Serbia"],
+    "correct": "Albania"
+  },
+  {
+    "country": "Bulgaria",
+    "flag": "🇧🇬",
+    "options": ["Romania", "Bulgaria", "Greece", "Serbia"],
+    "correct": "Bulgaria"
+  },
+  {
+    "country": "Romania",
+    "flag": "🇷🇴",
+    "options": ["Hungary", "Romania", "Bulgaria", "Ukraine"],
+    "correct": "Romania"
+  },
+  {
+    "country": "Moldova",
+    "flag": "🇲🇩",
+    "options": ["Ukraine", "Moldova", "Belarus", "Romania"],
+    "correct": "Moldova"
+  },
+  {
+    "country": "Ukraine",
+    "flag": "🇺🇦",
+    "options": ["Moldova", "Ukraine", "Romania", "Poland"],
+    "correct": "Ukraine"
+  },
+  {
+    "country": "Greece",
+    "flag": "🇬🇷",
+    "options": ["Greece", "Italy", "Turkey", "Albania"],
+    "correct": "Greece"
+  },
+  {
+    "country": "Turkey",
+    "flag": "🇹🇷",
+    "options": ["Bulgaria", "Greece", "Turkey", "Georgia"],
+    "correct": "Turkey"
+  },
+  {
+    "country": "Cyprus",
+    "flag": "🇨🇾",
+    "options": ["Cyprus", "Turkey", "Greece", "Syria"],
+    "correct": "Cyprus"
+  },
+  {
+    "country": "Syria",
+    "flag": "🇸🇾",
+    "options": ["Lebanon", "Jordan", "Turkey", "Syria"],
+    "correct": "Syria"
+  },
+  {
+    "country": "Jordan",
+    "flag": "🇯🇴",
+    "options": ["Iraq", "Palestine", "Jordan", "Syria"],
+    "correct": "Jordan"
+  },
+  {
+    "country": "Kuwait",
+    "flag": "🇰🇼",
+    "options": ["Saudi Arabia", "Kuwait", "Qatar", "UAE"],
+    "correct": "Kuwait"
+  },
+  {
+    "country": "Bahrain",
+    "flag": "🇧🇭",
+    "options": ["UAE", "Kuwait", "Bahrain", "Qatar"],
+    "correct": "Bahrain"
+  },
+  {
+    "country": "UAE",
+    "flag": "🇦🇪",
+    "options": ["Kuwait", "UAE", "Qatar", "Bahrain"],
+    "correct": "UAE"
+  },
+  {
+    "country": "Qatar",
+    "flag": "🇶🇦",
+    "options": ["UAE", "Kuwait", "Bahrain", "Qatar"],
+    "correct": "Qatar"
+  },
+  {
+    "country": "Oman",
+    "flag": "🇴🇲",
+    "options": ["Yemen", "Oman", "Qatar", "Bahrain"],
+    "correct": "Oman"
+  },
+  {
+    "country": "Yemen",
+    "flag": "🇾🇪",
+    "options": ["Kuwait", "Bahrain", "Oman", "Yemen"],
+    "correct": "Yemen"
+  },
+  {
+    "country": "Afghanistan",
+    "flag": "🇦🇫",
+    "options": ["Pakistan", "Iran", "Saudi Arabia", "Afghanistan"],
+    "correct": "Afghanistan"
+  },
+  {
+    "country": "Tajikistan",
+    "flag": "🇹🇯",
+    "options": ["Uzbekistan", "Kazakhstan", "Tajikistan", "Kyrgyzstan"],
+    "correct": "Tajikistan"
+  },
+  {
+    "country": "Kyrgyzstan",
+    "flag": "🇰🇬",
+    "options": ["Tajikistan", "Kazakhstan", "Kyrgyzstan", "Uzbekistan"],
+    "correct": "Kyrgyzstan"
+  },
+  {
+    "country": "Uzbekistan",
+    "flag": "🇺🇿",
+    "options": ["Kazakhstan", "Tajikistan", "Uzbekistan", "Kyrgyzstan"],
+    "correct": "Uzbekistan"
+  },
+  {
+    "country": "Mongolia",
+    "flag": "🇲🇳",
+    "options": ["Uzbekistan", "Kazakhstan", "Mongolia", "Kyrgyzstan"],
+    "correct": "Mongolia"
+  },
+  {
+    "country": "Sri Lanka",
+    "flag": "🇱🇰",
+    "options": ["Bhutan", "Nepal", "Sri Lanka", "Maldives"],
+    "correct": "Sri Lanka"
+  },
+  {
+    "country": "Maldives",
+    "flag": "🇲🇻",
+    "options": ["Nepal", "Maldives", "Sri Lanka", "Bhutan"],
+    "correct": "Maldives"
+  },
+  {
+    "country": "Nepal",
+    "flag": "🇳🇵",
+    "options": ["Sri Lanka", "Bhutan", "Nepal", "Maldives"],
+    "correct": "Nepal"
+  },
+  {
+    "country": "Bhutan",
+    "flag": "🇧🇹",
+    "options": ["Nepal", "Bhutan", "Sri Lanka", "Maldives"],
+    "correct": "Bhutan"
+  },
+  {
+    "country": "India",
+    "flag": "🇮🇳",
+    "options": ["Nepal", "Bangladesh", "India", "Bhutan"],
+    "correct": "India"
+  },
+  {
+    "country": "Bangladesh",
+    "flag": "🇧🇩",
+    "options": ["Nepal", "Bangladesh", "India", "Bhutan"],
+    "correct": "Bangladesh"
+  },
+  {
+    "country": "Pakistan",
+    "flag": "🇵🇰",
+    "options": ["India", "Afghanistan", "Bangladesh", "Pakistan"],
+    "correct": "Pakistan"
+  },
+  {
+    "country": "Iran",
+    "flag": "🇮🇷",
+    "options": ["Iraq", "Afghanistan", "Iran", "Pakistan"],
+    "correct": "Iran"
+  },
+  {
+    "country": "Iraq",
+    "flag": "🇮🇶",
+    "options": ["Jordan", "Kuwait", "Iran", "Iraq"],
+    "correct": "Iraq"
+  },
+  {
+    "country": "Saudi Arabia",
+    "flag": "🇸🇦",
+    "options": ["Yemen", "Oman", "Saudi Arabia", "UAE"],
+    "correct": "Saudi Arabia"
+  },
+  {
+    "country": "Turkey",
+    "flag": "🇹🇷",
+    "options": ["Greece", "Bulgaria", "Turkey", "Cyprus"],
+    "correct": "Turkey"
+  },
+  {
+    "country": "Georgia",
+    "flag": "🇬🇪",
+    "options": ["Georgia", "Armenia", "Azerbaijan", "Turkey"],
+    "correct": "Georgia"
+  },
+  {
+    "country": "Armenia",
+    "flag": "🇦🇲",
+    "options": ["Georgia", "Azerbaijan", "Armenia", "Turkey"],
+    "correct": "Armenia"
+  },
+  {
+    "country": "Azerbaijan",
+    "flag": "🇦🇿",
+    "options": ["Georgia", "Armenia", "Turkey", "Azerbaijan"],
+    "correct": "Azerbaijan"
+  },
+  {
+    "country": "Qatar",
+    "flag": "🇶🇦",
+    "options": ["Qatar", "Saudi Arabia", "UAE", "Kuwait"],
+    "correct": "Qatar"
+  },
+  {
+    "country": "Bahrain",
+    "flag": "🇧🇭",
+    "options": ["Bahrain", "Saudi Arabia", "Qatar", "UAE"],
+    "correct": "Bahrain"
+  },
+  {
+    "country": "UAE",
+    "flag": "🇦🇪",
+    "options": ["Kuwait", "UAE", "Qatar", "Bahrain"],
+    "correct": "UAE"
+  },
+  {
+    "country": "Oman",
+    "flag": "🇴🇲",
+    "options": ["Yemen", "Qatar", "Bahrain", "Oman"],
+    "correct": "Oman"
+  },
+  {
+    "country": "Yemen",
+    "flag": "🇾🇪",
+    "options": ["Oman", "Qatar", "Yemen", "Bahrain"],
+    "correct": "Yemen"
+  },
+  {
+    "country": "Bhutan",
+    "flag": "🇧🇹",
+    "options": ["Nepal", "Bhutan", "Maldives", "Sri Lanka"],
+    "correct": "Bhutan"
+  },
+  {
+    "country": "Nepal",
+    "flag": "🇳🇵",
+    "options": ["Nepal", "Bhutan", "Sri Lanka", "Maldives"],
+    "correct": "Nepal"
+  },
+  {
+    "country": "Maldives",
+    "flag": "🇲🇻",
+    "options": ["Sri Lanka", "Maldives", "Nepal", "Bhutan"],
+    "correct": "Maldives"
+  },
+  {
+    "country": "Sri Lanka",
+    "flag": "🇱🇰",
+    "options": ["Maldives", "Nepal", "Bhutan", "Sri Lanka"],
+    "correct": "Sri Lanka"
+  }
+]
