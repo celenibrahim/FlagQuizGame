@@ -1,14 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import {
-  Box,
-  Button,
-  Image,
-  Heading,
-  Modal,
-  FormControl,
-  Input,
-  VStack,
-} from "native-base";
+import { Box, Button, Image, Heading, Modal, Text, VStack } from "native-base";
 import { Animated, Easing, StyleSheet } from "react-native";
 const HomeScreen = ({ navigation }) => {
   const colorAnimation = useRef(new Animated.Value(0)).current;
@@ -57,15 +48,51 @@ const HomeScreen = ({ navigation }) => {
         </Box>
         <Box style={styles.box}>
           <Modal isOpen={showModal} onClose={() => setShowModal(false)}>
-            <Modal.Content maxWidth="400px">
+            <Modal.Content
+              maxWidth="400px"
+              borderRadius="20px"
+              backgroundColor="#dcecf3"
+            >
+              <Modal.Header style={styles.modal_header}>
+                <Text fontSize="xl">Select Game Mode</Text>
+              </Modal.Header>
               <Modal.Body>
-                <Modal.Header style={styles.modal_header}>
-                  Select Mode
-                </Modal.Header>
-                <VStack>
-                  <Button />
-                  <Button />
-                  <Button />
+                <VStack space={4} alignItems="center">
+                  <Button
+                    borderColor="white"
+                    variant={"outline"}
+                    colorScheme="blue"
+                    width="100%"
+                    onPress={() => {
+                      navigation.navigate("Learn");
+                      setShowModal(false);
+                    }}
+                  >
+                    Learning Page
+                  </Button>
+                  <Button
+                    borderColor="white"
+                    variant={"outline"}
+                    colorScheme="green"
+                    width="100%"
+                    onPress={() => {
+                      setShowModal(false);
+                    }}
+                  >
+                    In 3 Minutes
+                  </Button>
+                  <Button
+                    borderColor="white"
+                    variant={"outline"}
+                    colorScheme="orange"
+                    width="100%"
+                    onPress={() => {
+                      navigation.navigate("Game");
+                      setShowModal(false);
+                    }}
+                  >
+                    10 Seconds Mode
+                  </Button>
                 </VStack>
               </Modal.Body>
             </Modal.Content>

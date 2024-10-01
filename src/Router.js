@@ -4,7 +4,7 @@ import { NativeBaseProvider } from "native-base";
 
 import HomeScreen from "./screens/HomeScreen";
 import GameScreen from "./screens/GameScreen";
-
+import LearningScreen from "./screens/LearningFlagsScreen";
 const Stack = createNativeStackNavigator();
 
 function Router() {
@@ -22,6 +22,13 @@ function Router() {
           <Stack.Screen
             name="Game"
             component={GameScreen}
+            options={{
+              headerShown: false,
+            }}
+          />
+          <Stack.Screen
+            name="Learn"
+            component={LearningScreen}
             options={{
               headerShown: false,
             }}
