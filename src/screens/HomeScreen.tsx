@@ -102,6 +102,7 @@ const HomeScreen = ({ navigation }) => {
                     colorScheme="green"
                     width="100%"
                     onPress={() => {
+                      navigation.navigate("Game", { mode: 180 });
                       setShowModal(false);
                     }}
                   >
@@ -113,11 +114,11 @@ const HomeScreen = ({ navigation }) => {
                     colorScheme="orange"
                     width="100%"
                     onPress={() => {
-                      navigation.navigate("Game");
+                      navigation.navigate("Game", { mode: 5 });
                       setShowModal(false);
                     }}
                   >
-                    10 Seconds Mode
+                    5 Seconds Mode
                   </Button>
                 </VStack>
               </Modal.Body>

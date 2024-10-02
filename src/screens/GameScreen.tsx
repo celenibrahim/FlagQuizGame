@@ -3,10 +3,12 @@ import { Dimensions, StyleSheet } from "react-native";
 import { Box, Text, Button, VStack, Center } from "native-base";
 import flagData from "./../flags_data.json";
 
-const GameScreen = ({ navigation, mode }) => {
-  const [timer, setTimer] = useState(10);
+const GameScreen = ({ navigation, route }) => {
+  const { mode } = route.params;
+  const [timer, setTimer] = useState(mode === 5 ? 5 : mode);
   const [currentFlag, setCurrentFlag] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState(null);
+  const [isDisabled, setIsDisabled] = useState(false);
 
   useEffect(() => {
     const randomFlag = Math.floor(Math.random() * flagData.length);
@@ -16,17 +18,20 @@ const GameScreen = ({ navigation, mode }) => {
   useEffect(() => {
     if (timer > 0) {
       const interval = setInterval(() => {
-        setTimer((prev) => prev - 1);
+        setTimer((prev: number) => prev - 1);
       }, 1000);
 
       return () => clearInterval(interval);
-    } else {
+    } else if (mode === 5) {
       handleNextQuestion();
+    } else {
+      handleFinish();
     }
   }, [timer]);
 
-  const handleAnswer = (option: string) => {
+  const handleAnswer = (option) => {
     setSelectedAnswer(option);
+    setIsDisabled(true);
 
     setTimeout(() => {
       handleNextQuestion();
@@ -34,8 +39,11 @@ const GameScreen = ({ navigation, mode }) => {
   };
 
   const handleNextQuestion = () => {
-    setTimer(10);
+    if (mode === 5) {
+      setTimer(5);
+    }
     setSelectedAnswer(null);
+    setIsDisabled(false);
     const randomFlag = Math.floor(Math.random() * flagData.length);
     setCurrentFlag(randomFlag);
   };
@@ -71,6 +79,7 @@ const GameScreen = ({ navigation, mode }) => {
               fontSize: "22px",
               fontWeight: "bold",
             }}
+            isDisabled={isDisabled}
           >
             {option}
           </Button>
