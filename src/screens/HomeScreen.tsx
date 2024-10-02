@@ -30,6 +30,8 @@ const HomeScreen = ({ navigation }) => {
             color={"white"}
             fontWeight={"hairline"}
             alignSelf={"center"}
+            italic
+            bold
           >
             Flag Quiz
           </Heading>

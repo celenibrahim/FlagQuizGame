@@ -64,7 +64,7 @@ const GameScreen = ({ navigation }) => {
                 ? option === flagData[currentFlag].correct
                   ? "green"
                   : "red"
-                : "blue"
+                : "primary"
             }
             onPress={() => handleAnswer(option)}
             _text={{
