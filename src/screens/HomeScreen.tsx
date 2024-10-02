@@ -1,9 +1,28 @@
 import React, { useEffect, useRef, useState } from "react";
-import { Box, Button, Image, Heading, Modal, Text, VStack } from "native-base";
+import {
+  Box,
+  Button,
+  Image,
+  Heading,
+  Modal,
+  Text,
+  VStack,
+  Spinner,
+  HStack,
+} from "native-base";
 import { Animated, Easing, StyleSheet } from "react-native";
 const HomeScreen = ({ navigation }) => {
   const colorAnimation = useRef(new Animated.Value(0)).current;
   const [showModal, setShowModal] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const handleLearningPress = async () => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+      navigation.navigate("Learn");
+      setShowModal(false);
+    }, 2000);
+  };
   useEffect(() => {
     Animated.loop(
       Animated.timing(colorAnimation, {
@@ -65,12 +84,17 @@ const HomeScreen = ({ navigation }) => {
                     variant={"outline"}
                     colorScheme="blue"
                     width="100%"
-                    onPress={() => {
-                      navigation.navigate("Learn");
-                      setShowModal(false);
-                    }}
+                    onPress={handleLearningPress}
+                    isDisabled={loading}
                   >
-                    Learning Page
+                    {loading ? (
+                      <HStack alignItems="center">
+                        <Spinner size="sm" color="blue.500" />
+                        <Text ml={2}>Loading...</Text>
+                      </HStack>
+                    ) : (
+                      "Learning Page"
+                    )}
                   </Button>
                   <Button
                     borderColor="white"

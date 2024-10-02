@@ -1,7 +1,7 @@
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { NativeBaseProvider } from "native-base";
-
+import { StatusBar } from "expo-status-bar";
 import HomeScreen from "./screens/HomeScreen";
 import GameScreen from "./screens/GameScreen";
 import LearningScreen from "./screens/LearningFlagsScreen";
@@ -10,6 +10,7 @@ const Stack = createNativeStackNavigator();
 function Router() {
   return (
     <NativeBaseProvider>
+      <StatusBar hidden={true} style="dark" />
       <NavigationContainer>
         <Stack.Navigator>
           <Stack.Screen

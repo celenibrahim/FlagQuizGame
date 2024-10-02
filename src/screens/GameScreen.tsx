@@ -3,7 +3,7 @@ import { Dimensions, StyleSheet } from "react-native";
 import { Box, Text, Button, VStack, Center } from "native-base";
 import flagData from "./../flags_data.json";
 
-const GameScreen = ({ navigation }) => {
+const GameScreen = ({ navigation, mode }) => {
   const [timer, setTimer] = useState(10);
   const [currentFlag, setCurrentFlag] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState(null);
@@ -25,12 +25,12 @@ const GameScreen = ({ navigation }) => {
     }
   }, [timer]);
 
-  const handleAnswer = (option) => {
+  const handleAnswer = (option: string) => {
     setSelectedAnswer(option);
 
     setTimeout(() => {
       handleNextQuestion();
-    }, 350);
+    }, 250);
   };
 
   const handleNextQuestion = () => {
